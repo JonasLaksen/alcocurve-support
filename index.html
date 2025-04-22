@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alcocurve Support</title>
+  <link rel="icon" href="icon-1024.png" sizes="32x32" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #C66900;       /* Amber-orange brown */
+      --secondary: #D6954B;     /* Light amber */
+      --accent: #FFD54F;        /* Golden foam */
+      --bg: #FEFCF7;            /* Extra light straw */
+      --text: #3E2723;          /* Dark chocolate text */
+      --card-bg: #FFF8E1;       /* Pale straw */
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 0;
+    }
+    header {
+      background-color: #fff;           /* White header */
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem 1rem;
+      border-bottom: 2px solid var(--secondary); /* Thin border below */
+    }
+    header img.icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 24px;
+      background-color: var(--bg);
+      margin-right: 1rem;
+      border: 3px solid var(--accent);
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+    }
+    section {
+      background-color: var(--card-bg);
+      border-left: 6px solid var(--secondary);
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      margin: 1.5rem;
+    }
+    h2 {
+      color: var(--secondary);
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    p, li {
+      margin-bottom: 0.5rem;
+    }
+    ol {
+      counter-reset: step;
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 1rem;
+    }
+    ol li {
+      counter-increment: step;
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 0.75rem;
+    }
+    ol li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: var(--secondary);
+      color: #fff;
+      width: 1.5rem;
+      height: 1.5rem;
+      text-align: center;
+      line-height: 1.5rem;
+      border-radius: 50%;
+      font-weight: 700;
+    }
+    .disclaimer-box {
+      border: 2px dashed var(--accent);
+      background-color: var(--bg);
+      padding: 0.75rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 2rem 0;
+      color: var(--text);
+    }
+    a { color: var(--secondary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="icon-1024.png" alt="Alcocurve App Icon" class="icon">
+    <h1>Alcocurve Support</h1>
+  </header>
+  <main>
+    <section>
+      <h2>About Alcocurve</h2>
+      <p>Welcome to Alcocurve! Easily track your Blood Alcohol Concentration (BAC) over time. Enter your weight, gender, and drinks to see a flat-style, beer-toned chart of your BAC journey until you’re back to zero.</p>
+    </section>
+    <section>
+      <h2>Getting Started 🚀</h2>
+      <ol>
+        <li>⚖️ <strong>Pick your stats:</strong> Select your weight &amp; gender so Alcocurve tailors to you.</li>
+        <li>🍻 <strong>Pour 'em in:</strong> Tap <strong>Add Drink</strong> to log each sip, glass, or pint.</li>
+        <li>📈 <strong>Watch the magic:</strong> See a live line chart reveal your BAC’s rise and fall in real time!</li>
+      </ol>
+      <div class="disclaimer-box">
+        ⚠️ <strong>Disclaimer:</strong> Alcocurve uses standard BAC formulas for estimates. Everyone’s body is different—results might not be precise. Always drink responsibly!
+      </div>
+    </section>
+    <section>
+      <h2>How It's Calculated 🧮</h2>
+      <ol>
+        <li>🍸 <strong>Absorption:</strong> Converts drink volume × ABV × 0.789 g/mL over ~45 min.</li>
+        <li>💧 <strong>Distribution:</strong> Divides by body water (weight × 0.68♂/0.55♀) for raw BAC (‰).</li>
+        <li>⏳ <strong>Elimination:</strong> Subtracts 0.15 ‰/hr since your first drink.</li>
+        <li>📈 <strong>Plot:</strong> Displays BAC every minute until zero!</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Contact & Feedback ✉️</h2>
+      <p>I’m super excited to hear from you! Your feedback and ideas make Alcocurve awesome. Don’t hesitate to reach out:</p>
+      <ul>
+        <li>Email: <a href="mailto:alcocurve@proton.me">alcocurve@proton.me</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Alcocurve. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
